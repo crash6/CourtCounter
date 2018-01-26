@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_font_size"></dimen>
+    <dimen name="team_name_font_size">14sp</dimen>
+    <dimen name="score_font_size">56sp</dimen>
+
+    <dimen name="score_button_bottom_margin">8dp</dimen>
+    <dimen name="score_button_left_margin">24dp</dimen>
+    <dimen name="score_button_right_margin">24dp</dimen>
+
+    <dimen name="scoreboard_top_margin">16dp</dimen>
+    <dimen name="reset_button_bottom_margin">32dp</dimen>
+    <dimen name="scoreboard_separator_width">1dp</dimen>
+
+    <dimen name="score_top_margin">16sp</dimen>
+    <dimen name="score_bottom_margin">24dp</dimen>
+
+</resources>

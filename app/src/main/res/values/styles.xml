@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+    </style>
+
+    <!-- Style applied to the main layout of the application -->
+    <style name="MainLayoutAppearance" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Style applied to the area where is placed the score board for both teams -->
+    <style name="ScoreBoardAppearance" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/scoreboard_top_margin</item>
+    </style>
+
+    <!-- Style applied to each layout containing the single team scoreboard -->
+    <style name="TeamLayoutAppearance" parent="AppTheme">
+        <!-- I set width to 0dp because of the weight is set to 1 -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Style applied to the team name label -->
+    <style name="TeamNameAppearance" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/team_name_font_size</item>
+        <item name="android:textColor">@color/teamNameColor</item>
+
+        <!--<item name="android:layout_marginTop">@dimen/team_name_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/team_name_bottom_margin</item>-->
+    </style>
+
+    <!-- Style applied to the team score -->
+    <style name="TeamScoreAppearance" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/score_font_size</item>
+        <item name="android:textColor">@color/scoreColor</item>
+        <item name="android:layout_marginTop">@dimen/score_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/score_bottom_margin</item>
+    </style>
+
+    <!-- Style applied to the score buttons -->
+    <style name="ScoreButtonAppearance" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/score_bottom_margin</item>
+        <item name="android:layout_marginLeft">@dimen/score_button_left_margin</item>
+        <item name="android:layout_marginRight">@dimen/score_button_right_margin</item>
+    </style>
+
+    <!-- Style applied to reset button -->
+    <style name="ResetButtonAppearance" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/reset_button_bottom_margin</item>
+    </style>
+
+    <!-- Style applied to the vertical line shown in on the scoreboard-->
+    <style name="ScoreBoardSeparatorAppearance" parent="AppTheme">
+        <item name="android:layout_width">@dimen/scoreboard_separator_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+</resources>
